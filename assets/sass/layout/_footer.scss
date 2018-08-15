@@ -1,0 +1,102 @@
+.footer {
+  background: $light-blue;
+  margin-top: 55px;
+  padding: 30px 0px;
+
+  &-title {
+    font: 300 17px $pri-font;
+    color: #fff;
+    transition: all 0.2s;
+    padding: 0 0 20px 0;
+    letter-spacing: 1px;
+    margin-top: 5px;
+  }
+
+  &-group {
+    &-item {
+      margin-bottom: 12px;
+
+      a {
+        font: 300 15px $pri-font;
+        color: #cfddf1;
+        text-decoration: none;
+        transition: all 0.2s;
+      }
+    }
+  }
+
+  &-p {
+    font
+
+
+
+    : 300 15px $pri-font;
+    color: #cfddf1;
+  }
+
+  .stores-link {
+    margin-top: 20px;
+    a {
+      display: inline-block;
+      width: 40%;
+       &:not(:last-child) {
+         margin-right: 10px;
+       }
+    }
+  }
+
+  .social-icons {
+    .icon {
+      display: inline-block;
+      width: 32px;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.copyrights {
+  background: #92aad8;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-top: 1px solid #CCDEFF;
+
+  &-logo {
+    width: 162px;
+    float: left;
+    padding-right: 40px;
+    border-right: 1px solid #CCDEFF;
+  }
+
+  &-txt {
+    margin-top: 0px;
+    font: 300 15px $pri-font;
+    color: #cfddf1;
+    float: left;
+    padding-left: 40px;
+  }
+}
+
+
+@media all and (max-width: 1024px) {
+
+}
+
+@media all and (max-width: 839px) {
+
+}
+
+@media all and (max-width: 480px) {
+  .copyrights {
+    &-logo {
+      width: 120px;
+      padding-right: 15px;
+    }
+
+    &-txt {
+      padding-left: 15px;
+    }
+  }
+}

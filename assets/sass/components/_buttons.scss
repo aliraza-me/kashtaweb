@@ -1,0 +1,84 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+.badges {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  &-item {
+    display: block;
+    margin-bottom: 8px;
+    .badge {
+      border-left: 3px solid #808080;
+      background: lightgray;
+      border-radius: 2px;
+      font-family: 'Ubuntu',sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      padding: 6px 10px;
+      display: inline-block;
+
+      &-white {
+        background: #f2f2f2;
+        color: #808080;
+      }
+
+      &-red {
+        background: #ea5a6a;
+        border-color: #c5192c;
+        color: #fff;
+      }
+
+      &-purple {
+        background: #92aad8;
+        border-color: #476fbd;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.btn{
+  // display: block;
+  &.quickbtn {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    background-size: 25px;
+    display: inline-block;
+    border-radius: 3px;
+    -webkit-transition: all 0.2s;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &.wishlist {
+      background-image: url(../svg/wishlist.svg);
+    }
+
+    &.quickview {
+      background-image: url(../svg/quickview.svg);
+    }
+  }
+
+  &.btn-large {
+    display: block;
+    font: 300 16px/45px $pri-font;
+    width: 100%;
+    height: 45px;
+    background: lighten($light-gray, 30%);
+    color: $light-gray;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  &.pink {
+    background: $pink-color;
+    color: #fff;
+  }
+
+  &.blue {
+    background: $light-blue;
+    color: #fff;
+  }
+}

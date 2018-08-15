@@ -1,0 +1,115 @@
+.mobile-fiter-button {
+  display: block;
+  width: 100%;
+  background: $sec-color;
+  font: 500 18px/55px $pri-font;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  display: none;
+}
+
+.filter {
+  &-item {
+    border: none;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+    .collapse {
+      .title {
+        padding: 0 0 10px 0;
+        margin-left: 0;
+        background: none;
+        border: none;
+        font: 300 16px $pri-font;
+        color: $pri-color;
+        text-decoration: none;
+        display: block;
+
+        .icon {
+          background: url(../svg/arrow-down.svg) no-repeat center;
+          height: 14px;
+          display: inline-block;
+          float: right;
+          width: 16px;
+          background-size: contain;
+          margin-top: 2px;
+          transform: rotate(180deg);
+          transition: all 0.3s ease-out;
+        }
+
+        &.collapsed {
+          .icon {
+            transform: rotate(0deg);
+          }
+        }
+      }
+    }
+
+    .col-content {
+      max-height: 0px;
+      overflow: hidden;
+      transition: max-height 0.8s ease;
+
+      .collapse-group {
+        .collapse-item {
+          .check-container{
+            margin-bottom: 10px;
+            display: inline-block;
+          }
+        }
+      }
+      &.down{
+        max-height: 1000px;
+      }
+
+      .list {
+        &-item {
+          .link {
+            color: #808080;
+            font: 300 16px $pri-font;
+            display: block;
+            margin-bottom: 9px;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+// Respnosive -code
+
+
+@media all and (max-width: 1024px) {
+
+}
+
+@media all and (max-width: 839px) {
+
+}
+
+@media all and (max-width: 480px) {
+  .filter {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.8s ease;
+
+    &.collapsed {
+      max-height: 1000px;
+    }
+
+  }
+
+  .add {
+    display: none;
+  }
+}

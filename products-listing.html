@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Kashta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=yes, user-scalable=no">
+    <link rel="stylesheet" href="./public/css/app.min.css">
+  </head>
+
+  <body class="page listings">
+    <nav class="nav clr wow fadeInDown">
+      <a class="nav-logo" href="index.html" data-original-title="" title="">
+        <img src="./public/svg/color-logo.svg" alt="">
+      </a>
+
+      <div class="nav-list">
+        <a class="nav-list-item icon-search1" href="javascript:;" data-original-title="" title="">
+          <i class="icon"> <img src="./public/svg/search.svg" alt=""> </i>
+          <span class="text">Search</span>
+        </a>
+
+        <a class="nav-list-item icon-search1" href="javascript:;" data-original-title="" title="">
+          <i class="icon"> <img src="./public/svg/cart.svg" alt=""> </i>
+          <span class="text">Cart</span>
+        </a>
+
+        <a class="nav-list-item chat icon-search1" href="javascript:;" data-original-title="" title="">
+          <i class="icon"> <img src="./public/svg/chat.svg" alt=""> </i>
+          <span class="text">Live Chat</span>
+        </a>
+
+        <a class="nav-list-item icon-search1" href="javascript:;" data-original-title="" title="">
+          <i class="icon"> <img src="./public/svg/language.svg" alt=""> </i>
+          <span class="text">Language</span>
+        </a>
+
+        <a class="nav-list-item icon-search1" href="javascript:;" data-original-title="" title="">
+          <i class="icon"> <img src="./public/svg/signin.svg" alt=""> </i>
+          <span class="text">Signin/ Signup</span>
+        </a>
+
+        <a class="nav-list-item icon-search1" href="javascript:;" data-original-title="" title="">
+          <i class="icon"> <img src="./public/svg/menu.svg" alt=""> </i>
+          <span class="text">Menu</span>
+        </a>
+      </div>
+    </nav>
+
+    <section class="content">
+      <div class="custom-container">
+        <div class="row">
+          <div class="col-md-3">
+            <a class="mobile-fiter-button" id="filterMobile" href="javaScript:;">Filter</a>
+
+            <aside class="filter" id="filterGroup">
+              <div class="filter-item">
+                <div class="collapse">
+                  <a class="title collapsed" href="javascript:;" rel="Categories">
+                    Categories <i class="icon"></i>
+                  </a>
+                </div>
+
+                <div class="col-content down" id="Categories">
+                  <ul class="list">
+                    <li class="list-item"><a class="link" href="javascript:;" data-original-title="" title="">All Deals (3140)</a></li>
+                    <li class="list-item"><a class="link" href="javascript:;" data-original-title="" title="">Beach Sports (1800)</a></li>
+                    <li class="list-item"><a class="link" href="javascript:;" data-original-title="" title="">Desert Sports (390)</a></li>
+                    <li class="list-item"><a class="link" href="javascript:;" data-original-title="" title="">Air Sports (250)</a></li>
+                    <li class="list-item"><a class="link" href="javascript:;" data-original-title="" title="">Motor Sports (700)</a></li>
+                    <li class="list-item"><a class="link" href="javascript:;" data-original-title="" title="">Women Sports (700)</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="filter-item">
+                <div class="collapse">
+                  <a class="title" href="javaScript:;" rel="Filter">
+                    Filter <i class="icon"></i>
+                  </a>
+                </div>
+
+                <div class="col-content" id="Filter">
+                  <ul class="list">
+                    <li class="list-item"><a class="link" href="javascript:;" data-original-title="" title="">Popularity</a></li>
+                    <li class="list-item"><a class="link" href="javascript:;" data-original-title="" title="">Top rated</a></li>
+                    <li class="list-item"><a class="link" href="javascript:;" data-original-title="" title="">Deal of the day</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="filter-item">
+                <div class="collapse">
+                  <a class="title" href="javaScript:;" rel="Location">
+                    Location <i class="icon"></i>
+                  </a>
+                </div>
+
+                <div class="collapse col-content" id="Location">
+                  <ul class="collapse-group">
+                    <li class="collapse-item">
+                      <label class="check-container">
+                        <input type="checkbox" checked="checked">
+                        Dubai (230)
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+
+                    <li class="collapse-item">
+                      <label class="check-container">
+                        <input type="checkbox">Abu Dhabi (720)
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+
+                    <li class="collapse-item">
+                      <label class="check-container">
+                        <input type="checkbox">Sharjah (120)
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+
+                    <li class="collapse-item">
+                      <label class="check-container">
+                        <input type="checkbox">Qatar (530)
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+
+                    <li class="collapse-item">
+                      <label class="check-container">
+                        <input type="checkbox">Paris (290)
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+
+                    <li class="collapse-item">
+                      <label class="check-container">
+                        <input type="checkbox">Las Vegas (75)
+                        <span class="checkmark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="filter-item">
+                <div class="collapse">
+                  <a class="title" href="javaScript:;" rel="priceRange">
+                    Price Range <i class="icon"></i>
+                  </a>
+                </div>
+
+                <div class="in col-content" id="priceRange">
+                  <div id="slider-range" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 15%; width: 45%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 15%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 60%;"></span></div>
+                  <p class="slider-price clr">
+                    <input type="text" id="amount" readonly="" style="border:0; color:#f6931f; font-weight:bold;">
+                    <input type="submit" value="Filter">
+                  </p>
+
+                </div>
+              </div>
+            </aside>
+
+            <div class="add">
+              <img src="./public/img/add.png" class="adunit-scrapper" alt="Ad">
+            </div>
+          </div>
+
+          <div class="col-md-9">
+            <div class="offers deals">
+              <h2 class="offers-action">Showing 1 - 5 Deals | <strong><a href="javascript:;" data-original-title="" title="">See All</a></strong> </h2>
+              <div class="row">
+                <!-- Ofer Card Item 01 -->
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="product-card">
+                    <figure class="picture">
+                      <img src="./public/img/offers-card-01.jpg" alt="">
+
+                      <div class="badges">
+                        <span class="badges-item"><span class="badge badge-white">50% OFF</span></span>
+                        <span class="badges-item"><span class="badge badge-red">Deal of the day</span></span>
+                        <span class="badges-item"><span class="badge badge-white">Expires in 50 days</span></span>
+                        <span class="badges-item"><span class="badge badge-white">Popular</span></span>
+                        <span class="badges-item"><span class="badge badge-purple">New</span></span>
+                      </div>
+
+                      <div class="quick-action">
+                        <a href="javascript:;" class="btn quickbtn wishlist"  tooltip="Add to Wishlist"></a>
+                        <a href="javascript:;" class="btn quickbtn quickview"  tooltip="Quick View"></a>
+                      </div>
+                    </figure>
+
+                    <div class="caption clr">
+                      <h2 class="name"><a href="javascript:;" data-original-title="" title="">Dune Bashing in Dubai</a></h2>
+
+                      <a href="javaScript:;" class="stars blue" tooltip="Rate the product!">
+                        <fieldset class="rating">
+                          <input type="radio" id="star5" name="rating" value="5"><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                          <input type="radio" id="star4half" name="rating" value="4 and a half"><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                          <input type="radio" id="star4" name="rating" value="4"><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                          <input type="radio" id="star3half" name="rating" value="3 and a half"><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                          <input type="radio" id="star3" name="rating" value="3"><label class="full" for="star3" title="Meh - 3 stars"></label>
+                          <input type="radio" id="star2half" name="rating" value="2 and a half"><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                          <input type="radio" id="star2" name="rating" value="2"><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                          <input type="radio" id="star1half" name="rating" value="1 and a half"><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                          <input type="radio" id="star1" name="rating" value="1"><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                          <input type="radio" id="starhalf" name="rating" value="half"><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                        </fieldset>
+                      </a>
+                    </div>
+
+                    <div class="location-group clr">
+                      <h3 class="location"><i class="location-icon"></i>Dubai Jumeirah, Sofouh</h3>
+
+                      <h4 class="price"><del>AED9999</del>7650AED</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Ofer Card Item 02 -->
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="product-card wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <figure class="picture">
+                      <img src="./public/img/offers-card-02.jpg" alt="">
+
+                      <div class="badges">
+                        <span class="badges-item"><span class="badge badge-white">50% OFF</span></span>
+                        <span class="badges-item"><span class="badge badge-red">Deal of the day</span></span>
+                        <span class="badges-item"><span class="badge badge-white">Expires in 50 days</span></span>
+                        <span class="badges-item"><span class="badge badge-white">Popular</span></span>
+                        <span class="badges-item"><span class="badge badge-purple">New</span></span>
+                      </div>
+
+                      <div class="quick-action">
+                        <a href="javascript:;" class="btn quickbtn wishlist" tooltip="Add to Wishlist"></a>
+                        <a href="javascript:;" class="btn quickbtn quickview" tooltip="Quick View"></a>
+                      </div>
+                    </figure>
+
+                    <div class="caption clr">
+                      <h2 class="name"><a href="javascript:;" data-original-title="" title="">Dune Bashing in Dubai</a></h2>
+
+                      <a href="javaScript:;" tooltip="Rate the product!" class="stars blue">
+                        <fieldset class="rating">
+                          <input type="radio" id="star5" name="rating" value="5"><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                          <input type="radio" id="star4half" name="rating" value="4 and a half"><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                          <input type="radio" id="star4" name="rating" value="4"><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                          <input type="radio" id="star3half" name="rating" value="3 and a half"><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                          <input type="radio" id="star3" name="rating" value="3"><label class="full" for="star3" title="Meh - 3 stars"></label>
+                          <input type="radio" id="star2half" name="rating" value="2 and a half"><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                          <input type="radio" id="star2" name="rating" value="2"><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                          <input type="radio" id="star1half" name="rating" value="1 and a half"><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                          <input type="radio" id="star1" name="rating" value="1"><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                          <input type="radio" id="starhalf" name="rating" value="half"><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                        </fieldset>
+                      </a>
+                    </div>
+
+                    <div class="location-group clr">
+                      <h3 class="location"><i class="location-icon"></i>Dubai Jumeirah, Sofouh</h3>
+                      <h4 class="price" data-toggle="tooltip" title="Add to Wishlist"><del>AED9999</del>7650AED</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Ofer Card Item 01 -->
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="product-card">
+                    <figure class="picture">
+                      <img src="./public/img/offers-card-03.jpg" alt="">
+
+                      <div class="badges">
+                        <span class="badges-item"><span class="badge badge-white">50% OFF</span></span>
+                        <span class="badges-item"><span class="badge badge-red">Deal of the day</span></span>
+                        <span class="badges-item"><span class="badge badge-white">Expires in 50 days</span></span>
+                        <span class="badges-item"><span class="badge badge-white">Popular</span></span>
+                        <span class="badges-item"><span class="badge badge-purple">New</span></span>
+                      </div>
+
+                      <div class="quick-action">
+                        <a href="javascript:;" class="btn quickbtn wishlist"  tooltip="Add to Wishlist"></a>
+                        <a href="javascript:;" class="btn quickbtn quickview"  tooltip="Quick View"></a>
+                      </div>
+                    </figure>
+
+                    <div class="caption clr">
+                      <h2 class="name"><a href="javascript:;" data-original-title="" title="">Dune Bashing in Dubai</a></h2>
+
+                      <a href="javaScript:;" class="stars blue" tooltip="Rate the product!">
+                        <fieldset class="rating">
+                          <input type="radio" id="star5" name="rating" value="5"><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                          <input type="radio" id="star4half" name="rating" value="4 and a half"><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                          <input type="radio" id="star4" name="rating" value="4"><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                          <input type="radio" id="star3half" name="rating" value="3 and a half"><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                          <input type="radio" id="star3" name="rating" value="3"><label class="full" for="star3" title="Meh - 3 stars"></label>
+                          <input type="radio" id="star2half" name="rating" value="2 and a half"><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                          <input type="radio" id="star2" name="rating" value="2"><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                          <input type="radio" id="star1half" name="rating" value="1 and a half"><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                          <input type="radio" id="star1" name="rating" value="1"><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                          <input type="radio" id="starhalf" name="rating" value="half"><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                        </fieldset>
+                      </a>
+                    </div>
+
+                    <div class="location-group clr">
+                      <h3 class="location"><i class="location-icon"></i>Dubai Jumeirah, Sofouh</h3>
+
+                      <h4 class="price"><del>AED9999</del>7650AED</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Ofer Card Item 02 -->
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="product-card wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <figure class="picture">
+                      <img src="./public/img/offers-card-04.jpg" alt="">
+
+                      <div class="badges">
+                        <span class="badges-item"><span class="badge badge-white">50% OFF</span></span>
+                        <span class="badges-item"><span class="badge badge-red">Deal of the day</span></span>
+                        <span class="badges-item"><span class="badge badge-white">Expires in 50 days</span></span>
+                        <span class="badges-item"><span class="badge badge-white">Popular</span></span>
+                        <span class="badges-item"><span class="badge badge-purple">New</span></span>
+                      </div>
+
+                      <div class="quick-action">
+                        <a href="javascript:;" class="btn quickbtn wishlist" tooltip="Add to Wishlist"></a>
+                        <a href="javascript:;" class="btn quickbtn quickview" tooltip="Quick View"></a>
+                      </div>
+                    </figure>
+
+                    <div class="caption clr">
+                      <h2 class="name"><a href="javascript:;" data-original-title="" title="">Dune Bashing in Dubai</a></h2>
+
+                      <a href="javaScript:;" tooltip="Rate the product!" class="stars blue">
+                        <fieldset class="rating">
+                          <input type="radio" id="star5" name="rating" value="5"><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                          <input type="radio" id="star4half" name="rating" value="4 and a half"><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                          <input type="radio" id="star4" name="rating" value="4"><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                          <input type="radio" id="star3half" name="rating" value="3 and a half"><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                          <input type="radio" id="star3" name="rating" value="3"><label class="full" for="star3" title="Meh - 3 stars"></label>
+                          <input type="radio" id="star2half" name="rating" value="2 and a half"><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                          <input type="radio" id="star2" name="rating" value="2"><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                          <input type="radio" id="star1half" name="rating" value="1 and a half"><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                          <input type="radio" id="star1" name="rating" value="1"><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                          <input type="radio" id="starhalf" name="rating" value="half"><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                        </fieldset>
+                      </a>
+                    </div>
+
+                    <div class="location-group clr">
+                      <h3 class="location"><i class="location-icon"></i>Dubai Jumeirah, Sofouh</h3>
+                      <h4 class="price" data-toggle="tooltip" title="Add to Wishlist"><del>AED9999</del>7650AED</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Ofer Card Item 01 -->
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="product-card">
+                    <figure class="picture">
+                      <img src="./public/img/offers-card-03.jpg" alt="">
+
+                      <div class="badges">
+                        <span class="badges-item"><span class="badge badge-white">50% OFF</span></span>
+                        <span class="badges-item"><span class="badge badge-red">Deal of the day</span></span>
+                        <span class="badges-item"><span class="badge badge-white">Expires in 50 days</span></span>
+                        <span class="badges-item"><span class="badge badge-white">Popular</span></span>
+                        <span class="badges-item"><span class="badge badge-purple">New</span></span>
+                      </div>
+
+                      <div class="quick-action">
+                        <a href="javascript:;" class="btn quickbtn wishlist"  tooltip="Add to Wishlist"></a>
+                        <a href="javascript:;" class="btn quickbtn quickview"  tooltip="Quick View"></a>
+                      </div>
+                    </figure>
+
+                    <div class="caption clr">
+                      <h2 class="name"><a href="javascript:;" data-original-title="" title="">Dune Bashing in Dubai</a></h2>
+
+                      <a href="javaScript:;" class="stars blue" tooltip="Rate the product!">
+                        <fieldset class="rating">
+                          <input type="radio" id="star5" name="rating" value="5"><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                          <input type="radio" id="star4half" name="rating" value="4 and a half"><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                          <input type="radio" id="star4" name="rating" value="4"><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                          <input type="radio" id="star3half" name="rating" value="3 and a half"><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                          <input type="radio" id="star3" name="rating" value="3"><label class="full" for="star3" title="Meh - 3 stars"></label>
+                          <input type="radio" id="star2half" name="rating" value="2 and a half"><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                          <input type="radio" id="star2" name="rating" value="2"><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                          <input type="radio" id="star1half" name="rating" value="1 and a half"><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                          <input type="radio" id="star1" name="rating" value="1"><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                          <input type="radio" id="starhalf" name="rating" value="half"><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                        </fieldset>
+                      </a>
+                    </div>
+
+                    <div class="location-group clr">
+                      <h3 class="location"><i class="location-icon"></i>Dubai Jumeirah, Sofouh</h3>
+
+                      <h4 class="price"><del>AED9999</del>7650AED</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Ofer Card Item 02 -->
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="product-card wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <figure class="picture">
+                      <img src="./public/img/offers-card-04.jpg" alt="">
+
+                      <div class="badges">
+                        <span class="badges-item"><span class="badge badge-white">50% OFF</span></span>
+                        <span class="badges-item"><span class="badge badge-red">Deal of the day</span></span>
+                        <span class="badges-item"><span class="badge badge-white">Expires in 50 days</span></span>
+                        <span class="badges-item"><span class="badge badge-white">Popular</span></span>
+                        <span class="badges-item"><span class="badge badge-purple">New</span></span>
+                      </div>
+
+                      <div class="quick-action">
+                        <a href="javascript:;" class="btn quickbtn wishlist" tooltip="Add to Wishlist"></a>
+                        <a href="javascript:;" class="btn quickbtn quickview" tooltip="Quick View"></a>
+                      </div>
+                    </figure>
+
+                    <div class="caption clr">
+                      <h2 class="name"><a href="javascript:;" data-original-title="" title="">Dune Bashing in Dubai</a></h2>
+
+                      <a href="javaScript:;" tooltip="Rate the product!" class="stars blue">
+                        <fieldset class="rating">
+                          <input type="radio" id="star5" name="rating" value="5"><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                          <input type="radio" id="star4half" name="rating" value="4 and a half"><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                          <input type="radio" id="star4" name="rating" value="4"><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                          <input type="radio" id="star3half" name="rating" value="3 and a half"><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                          <input type="radio" id="star3" name="rating" value="3"><label class="full" for="star3" title="Meh - 3 stars"></label>
+                          <input type="radio" id="star2half" name="rating" value="2 and a half"><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                          <input type="radio" id="star2" name="rating" value="2"><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                          <input type="radio" id="star1half" name="rating" value="1 and a half"><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                          <input type="radio" id="star1" name="rating" value="1"><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                          <input type="radio" id="starhalf" name="rating" value="half"><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                        </fieldset>
+                      </a>
+                    </div>
+
+                    <div class="location-group clr">
+                      <h3 class="location"><i class="location-icon"></i>Dubai Jumeirah, Sofouh</h3>
+                      <h4 class="price" data-toggle="tooltip" title="Add to Wishlist"><del>AED9999</del>7650AED</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Ofer Card Item 01 -->
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="product-card">
+                    <figure class="picture">
+                      <img src="./public/img/offers-card-03.jpg" alt="">
+
+                      <div class="badges">
+                        <span class="badges-item"><span class="badge badge-white">50% OFF</span></span>
+                        <span class="badges-item"><span class="badge badge-red">Deal of the day</span></span>
+                        <span class="badges-item"><span class="badge badge-white">Expires in 50 days</span></span>
+                        <span class="badges-item"><span class="badge badge-white">Popular</span></span>
+                        <span class="badges-item"><span class="badge badge-purple">New</span></span>
+                      </div>
+
+                      <div class="quick-action">
+                        <a href="javascript:;" class="btn quickbtn wishlist"  tooltip="Add to Wishlist"></a>
+                        <a href="javascript:;" class="btn quickbtn quickview"  tooltip="Quick View"></a>
+                      </div>
+                    </figure>
+
+                    <div class="caption clr">
+                      <h2 class="name"><a href="javascript:;" data-original-title="" title="">Dune Bashing in Dubai</a></h2>
+
+                      <a href="javaScript:;" class="stars blue" tooltip="Rate the product!">
+                        <fieldset class="rating">
+                          <input type="radio" id="star5" name="rating" value="5"><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                          <input type="radio" id="star4half" name="rating" value="4 and a half"><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                          <input type="radio" id="star4" name="rating" value="4"><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                          <input type="radio" id="star3half" name="rating" value="3 and a half"><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                          <input type="radio" id="star3" name="rating" value="3"><label class="full" for="star3" title="Meh - 3 stars"></label>
+                          <input type="radio" id="star2half" name="rating" value="2 and a half"><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                          <input type="radio" id="star2" name="rating" value="2"><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                          <input type="radio" id="star1half" name="rating" value="1 and a half"><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                          <input type="radio" id="star1" name="rating" value="1"><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                          <input type="radio" id="starhalf" name="rating" value="half"><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                        </fieldset>
+                      </a>
+                    </div>
+
+                    <div class="location-group clr">
+                      <h3 class="location"><i class="location-icon"></i>Dubai Jumeirah, Sofouh</h3>
+
+                      <h4 class="price"><del>AED9999</del>7650AED</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Ofer Card Item 02 -->
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="product-card wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <figure class="picture">
+                      <img src="./public/img/offers-card-04.jpg" alt="">
+
+                      <div class="badges">
+                        <span class="badges-item"><span class="badge badge-white">50% OFF</span></span>
+                        <span class="badges-item"><span class="badge badge-red">Deal of the day</span></span>
+                        <span class="badges-item"><span class="badge badge-white">Expires in 50 days</span></span>
+                        <span class="badges-item"><span class="badge badge-white">Popular</span></span>
+                        <span class="badges-item"><span class="badge badge-purple">New</span></span>
+                      </div>
+
+                      <div class="quick-action">
+                        <a href="javascript:;" class="btn quickbtn wishlist" tooltip="Add to Wishlist"></a>
+                        <a href="javascript:;" class="btn quickbtn quickview" tooltip="Quick View"></a>
+                      </div>
+                    </figure>
+
+                    <div class="caption clr">
+                      <h2 class="name"><a href="javascript:;" data-original-title="" title="">Dune Bashing in Dubai</a></h2>
+
+                      <a href="javaScript:;" tooltip="Rate the product!" class="stars blue">
+                        <fieldset class="rating">
+                          <input type="radio" id="star5" name="rating" value="5"><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                          <input type="radio" id="star4half" name="rating" value="4 and a half"><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                          <input type="radio" id="star4" name="rating" value="4"><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                          <input type="radio" id="star3half" name="rating" value="3 and a half"><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                          <input type="radio" id="star3" name="rating" value="3"><label class="full" for="star3" title="Meh - 3 stars"></label>
+                          <input type="radio" id="star2half" name="rating" value="2 and a half"><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                          <input type="radio" id="star2" name="rating" value="2"><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                          <input type="radio" id="star1half" name="rating" value="1 and a half"><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                          <input type="radio" id="star1" name="rating" value="1"><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                          <input type="radio" id="starhalf" name="rating" value="half"><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                        </fieldset>
+                      </a>
+                    </div>
+
+                    <div class="location-group clr">
+                      <h3 class="location"><i class="location-icon"></i>Dubai Jumeirah, Sofouh</h3>
+                      <h4 class="price" data-toggle="tooltip" title="Add to Wishlist"><del>AED9999</del>7650AED</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pager">
+                  <a class="pager-item" href="javascript:;">1</a>
+                  <a class="pager-item" href="javascript:;">2</a>
+                  <a class="pager-item" href="javascript:;">3</a>
+                  <a class="pager-item" href="javascript:;">4</a>
+                  <a class="pager-item" href="javascript:;">5</a> ........
+                  <a class="pager-item" href="javascript:;">Previous</a> |
+                  <a class="pager-item" href="javascript:;">Next</a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gray">
+      <div class="custom-container">
+        <div class="box">
+
+        </div>
+      </div>
+    </section>
+
+    <section class="cities">
+      <div class="custom-container">
+        <h3 class="heading">Browse Cities</h3>
+        <div class="row">
+          <div class="col-xs-6 col-lg-2 col-md-2 col-sm-2">
+            <ul class="cities-group">
+              <li class="cities-group-item"><a class="link" href="javascript:;" data-original-title="" title="">Dubai</a></li>
+              <li class="cities-group-item"><a class="link" href="javascript:;" data-original-title="" title="">Abu Dhabi</a></li>
+              <li class="cities-group-item"><a class="link" href="javascript:;" data-original-title="" title="">Sharjah</a></li>
+              <li class="cities-group-item"><a class="link" href="javascript:;" data-original-title="" title="">Al Ain</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-lg-2 col-md-2 col-sm-2">
+            <ul class="cities-group">
+              <li class="cities-group-item"><a class="link" href="javascript:;" data-original-title="" title="">Ajman</a></li>
+              <li class="cities-group-item"><a class="link" href="javascript:;" data-original-title="" title="">Qatar</a></li>
+              <li class="cities-group-item"><a class="link" href="javascript:;" data-original-title="" title="">Manama</a></li>
+              <li class="cities-group-item"><a class="link" href="javascript:;" data-original-title="" title="">Cairo</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-lg-2 col-md-2 col-sm-2">
+            <ul class="cities-group">
+              <li class="cities-group-item"><a class="link" href="javascript:;" data-original-title="" title="">Beirut</a></li>
+              <li class="cities-group-item"><a class="link" href="javascript:;" data-original-title="" title="">Venice</a></li>
+              <li class="cities-group-item"><a class="link" href="javascript:;" data-original-title="" title="">Amsterdam</a></li>
+              <li class="cities-group-item"><a class="link" href="javascript:;" data-original-title="" title="">Salalah</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-lg-2 col-md-2 col-sm-2">
+            <ul class="cities-group">
+              <li class="cities-group-item"><a class="link" href="javascript:;" data-original-title="" title="">Las Vegas</a></li>
+              <li class="cities-group-item"><a class="link" href="javascript:;" data-original-title="" title="">Damascus</a></li>
+              <li class="cities-group-item"><a class="link" href="javascript:;" data-original-title="" title="">Kieve</a></li>
+              <li class="cities-group-item"><a class="link" href="javascript:;" data-original-title="" title="">Saint Petersburg</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-lg-2 col-md-2 col-sm-2">
+            <ul class="cities-group">
+              <li class="cities-group-item"><a class="link" href="javascript:;" data-original-title="" title="">Berlin</a></li>
+              <li class="cities-group-item"><a class="link" href="javascript:;" data-original-title="" title="">Stockholm</a></li>
+              <li class="cities-group-item"><a class="link" href="javascript:;" data-original-title="" title="">Yerevan</a></li>
+              <li class="cities-group-item"><a class="link" href="javascript:;" data-original-title="" title="">Vienna</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-lg-2 col-md-2 col-sm-2">
+            <ul class="cities-group">
+              <li class="cities-group-item"><a class="link" href="javascript:;" data-original-title="" title="">Santiago</a></li>
+              <li class="cities-group-item"><a class="link" href="javascript:;" data-original-title="" title="">Copenhagen</a></li>
+              <li class="cities-group-item"><a class="link" href="javascript:;" data-original-title="" title="">Paris</a></li>
+              <li class="cities-group-item"><a class="link" href="javascript:;" data-original-title="" title="">Amman</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="custom-container">
+        <div class="row">
+          <div class="col-md-7 col-sm-7">
+            <div class="row">
+              <div class="col-md-3 col-sm-6 col-6">
+                <h3 class="footer-title">Kashta</h3>
+                <ul class="footer-group">
+                  <li class="footer-group-item"><a href="about.html">About Kashta</a></li>
+                  <li class="footer-group-item"><a href="advertise-with-us.html">Advertise with us</a></li>
+                  <li class="footer-group-item"><a href="partnership.html">Partnership</a></li>
+                  <li class="footer-group-item"><a href="blog.html">blog</a></li>
+                </ul>
+              </div>
+
+              <div class="col-md-3 col-sm-6 col-6">
+                <h3 class="footer-title">Work with us</h3>
+                <ul class="footer-group">
+                  <li class="footer-group-item"><a href="createkashtadeal.html">Create Kashta deal</a></li>
+                  <li class="footer-group-item"><a href="join-our-team.html">Join our team</a></li>
+                </ul>
+              </div>
+
+              <div class="col-md-3 col-sm-6 col-6">
+                <h3 class="footer-title">Contact</h3>
+                <ul class="footer-group">
+                  <li class="footer-group-item"><a href="customer-support.html">Customer support</a></li>
+                  <li class="footer-group-item"><a href="contact-us.html">Contact us</a></li>
+                </ul>
+              </div>
+
+              <div class="col-md-3 col-sm-6 col-6">
+                <h3 class="footer-title">More</h3>
+                <ul>
+                  <li class="footer-group-item"><a href="faq.html">FAQ</a></li>
+                  <li class="footer-group-item"><a href="terms-and-conditions.html">Terms and conditions</a></li>
+                  <li class="footer-group-item"><a href="privacy-policy.">Privacy policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5 col-sm-5 col-12">
+            <div class="row">
+              <div class="col-md-5 col-12 hidden-xs">
+                <h3 class="footer-title">Follow us</h3>
+                <div class="social-icons">
+                  <a href="javascript:;" class="icon icon-fb" data-original-title="" title="">
+                    <img src="./public/svg/facebook.svg" alt="">
+                  </a>
+                  <a href="javascript:;" class="icon icon-tw" data-original-title="" title="">
+                    <img src="./public/svg/twitter.svg" alt="">
+                  </a>
+                  <a href="javascript:;" class="icon icon-insta" data-original-title="" title="">
+                    <img src="./public/svg/instagram.svg" alt="">
+                  </a>
+                  <a href="javascript:;" class="icon icon-yt" data-original-title="" title="">
+                    <img src="./public/svg/youtube.svg" alt="">
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-md-7 col-12">
+                <h3 class="footer-title">Download</h3>
+                <p class="footer-p">Enjoy thousands of deals using your phone, we are available on the app store and google play</p>
+                <div class="stores-link">
+                  <a href="javascript:;" data-original-title="" title="">
+                    <img src="./public/svg/appstore.svg" alt="Download From Apple Store">
+                  </a>
+                  <a href="javascript:;" data-original-title="" title="">
+                    <img src="./public/svg/playstore.svg" alt="Download From Google Play">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section class="copyrights clr">
+      <div class="custom-container">
+        <div class="copyrights-logo">
+          <img src="./public/svg/footer-logo.svg" alt="Kashta">
+        </div>
+        <div class="copyrights-txt">
+          <p>©2017 all rights reserved for Kashta<br>Powered by Amaal Creative Agency</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Java Script -->
+    <script src="./public/js/app.min.js"></script>
+  </body>
+</html>

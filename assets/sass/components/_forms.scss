@@ -1,0 +1,239 @@
+.k-form {
+  &-item {
+     width: 100%;
+     height: 45px;
+     border: none;
+     border-bottom: 1px solid $lighter-gray;
+     background: transparent;
+     margin-bottom: 20px;
+
+      &::-webkit-input-placeholder {
+        color: $lighter-gray;
+        font: 300 16px $pri-font;
+      }
+      &::-moz-placeholder {
+        color: $lighter-gray;
+        font: 300 16px $pri-font;
+      }
+      &:-ms-input-placeholder {
+        color: $lighter-gray;
+        font: 300 16px $pri-font;
+      }
+      &:-moz-placeholder {
+        color: $lighter-gray;
+        font: 300 16px $pri-font;
+      }
+
+      &[type="submit"] {
+        background: $light-blue;
+        width: 180px;
+        height: 50px;
+        font: 300 18px/22px $pri-font;
+        color: #fff;
+        border-radius: 3px;
+      }
+
+     &.payment-opt {
+       height: 45px;
+     }
+  }
+
+  .checkbox-wrapper {
+    text-align: center;
+    .detail {
+      font: 300 16px/26px $pri-font;
+      color: $light-gray;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+    label {
+      display: block;
+    }
+  }
+  input[type="checkbox"] {
+
+  }
+}
+
+// check-box
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="checkbox"]:checked + label,
+[type="checkbox"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    background: #fff;
+}
+[type="checkbox"]:checked + label:after,
+[type="checkbox"]:not(:checked) + label:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: $light-blue;
+    position: absolute;
+    top: 5px;
+    border-radius: 2px;
+    left: 5px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+
+
+// range Slider
+
+.range-slider {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  height: 6em;
+
+  .increment {
+    position: relative;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .numbers {
+    text-align: left;
+  }
+
+  & svg,
+  & input[type=range] {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  input[type=number] {
+    border: none;
+    text-align: left;
+    font: 300 14px/26px $pri-font;
+    -moz-appearance: textfield;
+  }
+  input[type=number]::-webkit-outer-spin-button,
+  input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  input[type=number]:invalid,
+  input[type=number]:out-of-range {
+    border: 1px solid #ff6347;
+  }
+  input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #2497e3;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #2497e3;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #2497e3;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: $lighter-gray;
+    border-radius: 1px;
+    box-shadow: none;
+    border: 0;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    z-index: 2;
+    position: relative;
+    box-shadow: 0px 0px 0px #000;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: $light-gray;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8px;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: $light-gray;
+    border-radius: 1px;
+    box-shadow: none;
+    border: 0;
+  }
+  input[type=range]::-moz-range-thumb {
+    z-index: 2;
+    position: relative;
+    box-shadow: 0px 0px 0px #000;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #a1d0ff;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower,
+  input[type=range]::-ms-fill-upper {
+    background: #2497e3;
+    border-radius: 1px;
+    box-shadow: none;
+    border: 0;
+  }
+  input[type=range]::-ms-thumb {
+    z-index: 2;
+    position: relative;
+    box-shadow: 0px 0px 0px #000;
+    border: 1px solid #2497e3;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #a1d0ff;
+    cursor: pointer;
+  }
+}
